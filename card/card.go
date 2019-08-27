@@ -29,3 +29,7 @@ func NewDeck() []Card {
 	}
 	return cards
 }
+
+func (c Card) Value() int {
+	return int(c.Suit)*13 + int(c.Rank)
+}
